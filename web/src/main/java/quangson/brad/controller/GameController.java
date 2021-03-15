@@ -30,6 +30,7 @@ public class GameController {
     // == request methods ==
     @GetMapping("/")
     public String home(Model model){
+        gameService.reset();
         model.addAttribute("playLink","play");
         return ViewNames.HOME;
     }

@@ -1,0 +1,12 @@
+<thlogic>
+    <attr sel="#header"
+          th:replace="~{fragments/head :: headFragment}" />
+    <attr sel="#anchor"
+          th:href="${playLink}"
+          th:text="Play" />
+    <attr sel="#footer"
+          th:replace="~{fragments/footer :: footerFragment}" />
+
+
+
+</thlogic>

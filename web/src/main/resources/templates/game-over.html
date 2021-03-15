@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head th:replace="~{fragments/head :: headFragment}">
     <meta charset="UTF-8">
     <title>Guess the Number Game - End</title>
 </head>
@@ -12,9 +12,7 @@
         <a href="restart">Play Again</a><br>
         <a href="/">Home</a>
 
-        <footer>
-            <p>Created by the Bradley Quangson</p>
-        </footer>
+        <footer th:replace="~{fragments/footer :: footerFragment}"></footer>
     </div>
 </body>
 </html>
